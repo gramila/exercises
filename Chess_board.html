@@ -1,0 +1,20 @@
+<script>
+function chessBoard(){
+  var size = 8;
+  var line = '';
+  for (var y = 0; y < size; y++) {
+    for(x = 0 ; x < size; x++)
+    {
+        if ((x + y) % 2 == 0) {
+          line += " "
+        }
+        else {
+          line += "#"
+        }
+    }
+    line += "\n"
+  }
+  console.log(line);
+}
+chessBoard();
+</script>
